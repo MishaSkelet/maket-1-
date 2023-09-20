@@ -1,10 +1,44 @@
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden; 
+.container{
+    position: relative;
+    background-color: rgb(247, 249, 249);
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+}
+
+.box{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: tuu 4s ease-in 2s ;
+}
+
+@keyframes tuu {
+    0%{
+        background-color: rgb(240, 31, 31);
+        bottom:  0px;
+        right: 0px; 
     }
+    25%{
+        background-color: rgb(19, 19, 124);
+        bottom: 400px;
+        right:0px;
+        
+    }
+    50%{
+        background-color: rgb(25, 141, 25);
+        right: 400px;
+        bottom: 400px;
+       
+    }
+    75% {
+        background-color: blueviolet;
+        right: 400px;
+        bottom: 0px;
+    }
+    100%{
+        background-color: rgb(234, 234, 57);
+        bottom: 00px;
+        right: 00px;
+    }
+}
